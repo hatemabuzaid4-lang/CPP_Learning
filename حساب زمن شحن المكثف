@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+// تعريف المتغيرات كأرقام عشرية
+    double R, C, tau, totalTime;
+
+    // طلب إدخال المقاومة
+    cout << "Enter Resistance (R) in Ohms: ";
+    cin >> R;
+
+    // طلب إدخال سعة المكثف بالفاراد
+    cout << "Enter Capacitance (C) in Farads (e.g., 0.0001 for 100uF): ";
+    cin >> C;
+
+    // المعالجة الحسابية للقوانين
+    tau = R * C;
+    totalTime = 5 * tau;
+
+    // طباعة النتائج النهائية
+    cout << "\n--- Circuit Analysis ---" << endl;
+    cout << "Time Constant (Tau)  = " << tau << " seconds" << endl;
+    cout << "Total Charging Time  = " << totalTime << " seconds" << endl;
+    cout << "------------------------" << endl;
+
+    return 0;
+}
