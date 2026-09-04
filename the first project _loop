@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number=0,counter=1,carry=0;
+    while(number>=0)
+    {
+     cout<<counter<< "_enter the number\n" ;
+     cin>>number;
+    carry +=number;
+     counter++;
+    }
+
+    cout<<"the carry of the number is equel";
+    cout<<carry;
+    return 0;
+}
