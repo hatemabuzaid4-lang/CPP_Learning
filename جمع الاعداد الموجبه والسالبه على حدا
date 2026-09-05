@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int number=1, sum, positivesum=0,negativesum=0;
+   for(int counter=1; number!=0; counter++)
+   {
+       cout<<"enter the number\n";
+       cin>>number;
+       if (number==0)
+        break;
+        if (number>0)
+       positivesum+=number;
+       else
+        negativesum+=number;
+   }
+       cout<<"the positivesum is equel"<<positivesum<<endl;
+       cout <<"the negativesum is equel"<<negativesum<<endl;
+    return 0;
+}
